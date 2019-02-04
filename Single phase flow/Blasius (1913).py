@@ -1,5 +1,5 @@
 def f_pred_Blasius (Array, Reynolds, limit, f_name = 'f_pred_Blasius [-]'):
-    '''Calculation of predicted friction factor by Blasius(1913) correlation (by Fanning).
+    '''Calculation of predicted friction factor by Blasius(1913) correlation (by Fanning) - smooth tube.
     Inputs are: Array - final table, Reynolds - Reynolds number according to measured flow (liquid, gas, liquid-only, gas-only), limit - critical Re number.'''
     import pandas as pd
     import numpy as np
