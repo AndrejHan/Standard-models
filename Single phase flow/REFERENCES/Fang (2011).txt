@@ -1,1 +1,1 @@
-﻿[1] X. Fang, Y. Xu, Z. Zhou, New correlations of single-phase friction factor for turbulent pipe flow and evaluation of existing single-phase friction factor correlations, Nuclear Engineering and Design, 241 (2011) 897-902.
+X. Fang, Y. Xu, Z. Zhou, New correlations of single-phase friction factor for turbulent pipe flow and evaluation of existing single-phase friction factor correlations, Nuclear Engineering and Design, 241 (2011) 897-902.
