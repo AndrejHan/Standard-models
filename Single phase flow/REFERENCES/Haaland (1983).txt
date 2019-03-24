@@ -1,0 +1,1 @@
+﻿[1] S.E. Haaland, Simple and explicit formulas for the friction factor in turbulent pipe flow, Journal of Fluids Engineering, 105 (1983) 89-90.
