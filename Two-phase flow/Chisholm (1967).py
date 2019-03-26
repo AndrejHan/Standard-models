@@ -1,6 +1,6 @@
 def Chisholm_1967 (Array, Lockhart_Martinelli, Reynolds_l, Reynolds_g, liquid = True, TPM_name = 'phi^2_pred_Chisholm_1967_l [-]'):
     '''Calculation of Chisholm(1967) model for two phase flow multiplier - liquid or gas.
-    Inputs are: Array - final table, Lockhart_Martinelli - L and M parameter X, Reynolds_l - Reynolds number of the liquid phase, Reynolds_g - Reynolds number of the gas phase, liquid? - liquid/gas multiplier.'''    
+    Inputs are: Array - final table, Lockhart_Martinelli - L and M parameter X [-], Reynolds_l - Reynolds number of the liquid phase [-], Reynolds_g - Reynolds number of the gas phase [-], liquid? - liquid/gas multiplier.'''    
     import pandas as pd
     if liquid == True: #if is phi^2 liquid
         Re_vv = Reynolds_l[Reynolds_l<1000].index & Reynolds_g[Reynolds_g<2000].index 
