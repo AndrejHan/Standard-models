@@ -1,6 +1,6 @@
 def f_pred_JensenVlakancic (Array, f_pred_smooth, Reynolds, CrossSection_smooth, CrossSection_microfin, FinHelixAngle, FinHeight, Diameter_inter_microfin, FinNumber, FinPitch, limit, f_name = 'f_pred_JensenVlakancic [-]'):
     '''Calculation of predicted friction factor by Jensen and Vlakancic correlation (by Fanning) for the microfined tubes.
-    Inputs are: Array - final table, f_pred_smooth - friction factor predicted for the smooth tube, Reynolds - Reynolds number according to measured flow (l, g, lo, go), CrossSection_smooth - Cross section of the pipe as smooth, CrossSection_microfin - Cross section of the pipe with fins, FinHelixAngle - Helix angle of fins, FinHeight - Height of the fin, limit - critical Re number .'''
+    Inputs are: Array - final table, f_pred_smooth - friction factor predicted for the smooth tube [-], Reynolds - Reynolds number according to measured flow (l, g, lo, go) [-], CrossSection_smooth - Cross section of the pipe as smooth [m^2], CrossSection_microfin - Cross section of the pipe with fins [m^2], FinHelixAngle - Helix angle of fins [m], FinHeight - Height of the fin [m], limit - critical Re number [-].'''
     import pandas as pd
     import numpy as np    
    
