@@ -8,7 +8,7 @@ def Awad_Muzychka_2008(Array, MassQual, DynVisc_l, DynVisc_g, MassFlux_tp, D_int
         
     Re_low = Re_tp[Re_tp < 2000] #laminar flow
     f_low = 16./Re_low
-    Re_high = Re_tp[Re_tp >= 2000]  #turbulent flow, usage of the Fang(2011)
+    Re_high = Re_tp[Re_tp >= 2000]  #turbulent flow
     f_high = 0.25*0.25*(np.log10(150.39/(Re_high**0.98865) - 152.66/Re_high))**(-2) 
     f = pd.concat([f_low,f_high])    
     
