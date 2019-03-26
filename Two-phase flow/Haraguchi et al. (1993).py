@@ -1,6 +1,6 @@
 def Haraguchi_1993 (Array, rho_l, rho_g, DynVisc_g, MassQual, MassFlux_tp, X_pred, CrossSection, Gconst, TPM_name = 'phi^2_pred_Haraguchi_1993_g [-]', HM_name = 'Dp/dz_pred_Haraguchi_1993 [Pa/m]'):
     '''Calculation of Haraguchi et al. (1993) model for two phase flow multiplier - gas.
-    Inputs are: Array - final table, rho_l - Density of the liquid phase, rho_g - Density of the gas phase, DynVisc_g - Dynamic viscosity of the gas, MassQual - mass quality, MassFlux_tp - Total mass flux, X_pred - Lockhart and Martinelli parameter defined by power law, CrossSection - Cross section of the tube, Gconst - gravitational constant acceleration.'''    
+    Inputs are: Array - final table, rho_l - Density of the liquid phase [kg/m^3], rho_g - Density of the gas phase [kg/m^3], DynVisc_g - Dynamic viscosity of the gas [Pa*s], MassQual - mass quality [-], MassFlux_tp - Total mass flux [kg/m^2/s], X_pred - Lockhart and Martinelli parameter defined by power law [-], CrossSection - Cross section of the tube [m^2], Gconst - gravitational constant acceleration [m/s^2].'''    
     import numpy as np
     De = np.sqrt((4*CrossSection)/np.pi)
     Re_e_g = (MassFlux_tp * De * MassQual) / DynVisc_g
