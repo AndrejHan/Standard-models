@@ -1,6 +1,6 @@
 def Bettiel_Whalley_1982(Array, MassQual, DynVisc_l, DynVisc_g, MassFlux_tp, D_int, rho_l, rho_g, rho_tp,  HM_name = 'Dp/dz_pred_Bettiel_Whalley_1982_tp [Pa/m]'):
     '''Calculation of Bettiel and Whalley (1982) model for two phase dynamic viscosity. For the calculation of friction factor is used Fang(2011) correlation (by Fanning).
-    Inputs are: Array - final table, MassQual - mass quality, DynVisc_l - Dynamic viscosity of liquid, DynVisc_g - Dynamic viscosity of gas, MassFlux_tp - two phase mass flux, D_int - internal diameter, rho_l - density of the liquid, rho_g - density of the gas, rho_tp - two phase flow density.'''
+    Inputs are: Array - final table, MassQual - mass quality [-], DynVisc_l - Dynamic viscosity of liquid [Pa*s], DynVisc_g - Dynamic viscosity of gas [Pa*s], MassFlux_tp - two phase mass flux [kg/m^2/s], D_int - internal diameter [m], rho_l - density of the liquid [kg/m^3], rho_g - density of the gas [kg/m^3], rho_tp - two phase flow density [kg/m^3].'''
     import pandas as pd
     import numpy as np
     Beta = MassQual/(MassQual + (1 - MassQual)*rho_g/rho_l)
