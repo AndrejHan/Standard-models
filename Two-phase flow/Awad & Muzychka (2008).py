@@ -1,6 +1,6 @@
 def Awad_Muzychka_2008(Array, MassQual, DynVisc_l, DynVisc_g, MassFlux_tp, D_int, rho_tp,  HM_name = 'Dp/dz_pred_Awad_Muzychka_2008_tp [Pa/m]'):
     '''Calculation of Awad and Muzychka (2008) (definition 4) model for two phase dynamic viscosity. For the calculation of friction factor is used Fang(2011) correlation (by Fanning).
-    Inputs are: Array - final table, MassQual - mass quality, DynVisc_l - Dynamic viscosity of liquid, DynVisc_g - Dynamic viscosity of gas, MassFlux_tp - two phase mass flux, D_int - internal diameter, rho_tp - two phase flow density.'''
+    Inputs are: Array - final table, MassQual - mass quality [-], DynVisc_l - Dynamic viscosity of liquid [Pa*s], DynVisc_g - Dynamic viscosity of gas [Pa*s], MassFlux_tp - two phase mass flux [kg/m^2/s], D_int - internal diameter [m], rho_tp - two phase flow density [kg/m^3].'''
     import pandas as pd
     import numpy as np
     mu_tp = DynVisc_g*(2*DynVisc_g + DynVisc_l - 2*(DynVisc_g - DynVisc_l)*(1-MassQual))/(2*DynVisc_g + DynVisc_l + (DynVisc_g - DynVisc_l)*(1-MassQual))
