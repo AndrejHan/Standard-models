@@ -8,7 +8,7 @@ def Shannak_2008 (Array, MassQual, DynVisc_l, DynVisc_g, MassFlux_tp, D_int, rho
     Re_low = Re_tp[Re_tp < 2000] #laminar flow
     f_low = 16./Re_low
     
-    Re_high = Re_tp[Re_tp >= 2000]  #turbulent flow)
+    Re_high = Re_tp[Re_tp >= 2000]  #turbulent flow
     f_high = 0.25 * (-2*np.log10(1./3.7065 * FinHeight/D_int - 5.0452/Re_high * np.log10(1./2.8257 * (FinHeight/D_int)**1.1098 + 5.8506/Re_high**0.8981)))**(-2) 
     f = pd.concat([f_low,f_high])    
     
