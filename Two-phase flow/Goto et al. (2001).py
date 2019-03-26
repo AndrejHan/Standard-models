@@ -1,6 +1,6 @@
 def Goto_2001 (Array, MassQual, MassFlux_tp, X, rho_g, Re_g, CrossSection, TPM_name = 'phi^2_pred_Haraguchi_1993_g [-]', HM_name = 'Dp/dz_pred_Goto_2001 [Pa/m]'):
     '''Calculation of Goto et al. (2001) model for two phase flow multiplier  - gas.
-    Inputs are: Array - final table, MassQual - mass quality, MassFlux_tp - two phase mass flux, X - Lockhart and Martinelli parameter, rho_g - gas phase density, Re_g - Reynolds number of the gas phase, CrossSection - cross section of the tube.'''
+    Inputs are: Array - final table, MassQual - mass quality [-], MassFlux_tp - two phase mass flux [kg/m^2/s], X - Lockhart and Martinelli parameter [-], rho_g - gas phase density [kg/m^3], Re_g - Reynolds number of the gas phase [-], CrossSection - cross section of the tube [m^2].'''
     import pandas as pd
     import numpy as np
     De = np.sqrt((4*CrossSection)/np.pi)
