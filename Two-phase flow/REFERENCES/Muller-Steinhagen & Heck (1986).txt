@@ -1,0 +1,1 @@
+H. Müller-Steinhagen, K. Heck, A simple friction pressure drop correlation for two-phase flow in pipes, Chemical Engineering and Processing, 20 (1986) 297-308.
