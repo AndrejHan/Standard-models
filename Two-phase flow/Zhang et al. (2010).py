@@ -1,6 +1,6 @@
 def Zhang_2010 (Array, Lockhart_Martinelli, D_int, rho_l, rho_g, SurfaceTension, flow = 'adiabatic gas-liquid', liquid = True, TPM_name = 'phi^2_pred_Zhang_2010_l [-]'):
     '''Calculation of Zhang et al. (2010) model for two phase flow multiplier - liquid or gas.
-    Inputs are: Array - final table, Lockhart_Martinelli - L and M parameter X, D_int - internal diameter, rho_l - density of liquid, rho_g - density of gas, SurfaceTension, flow = 'adiabatic gas-liquid'/'adiabatic vapor-liquid'/'flow boiling', liquid? - liquid/gas multiplier.'''    
+    Inputs are: Array - final table, Lockhart_Martinelli - L and M parameter X [-], D_int - internal diameter [m], rho_l - density of liquid [kg/m^3], rho_g - density of gas [kg/m^3], SurfaceTension [N/m], flow = 'adiabatic gas-liquid'/'adiabatic vapor-liquid'/'flow boiling', liquid? - liquid/gas multiplier.'''    
     import numpy as np
     La = (np.sqrt(SurfaceTension/(9.81*(rho_l - rho_g))))/D_int #Laplace constant
     
