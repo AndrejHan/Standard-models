@@ -1,1 +1,1 @@
-﻿[1] D. Chisholm, A theoretical basis for the Lockhart-Martinelli correlation for two-phase flow, International Journal of Heat and Mass Transfer, 10 (1967) 1767-1778.
+D. Chisholm, A theoretical basis for the Lockhart-Martinelli correlation for two-phase flow, International Journal of Heat and Mass Transfer, 10 (1967) 1767-1778.
