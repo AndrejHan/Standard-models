@@ -1,6 +1,6 @@
 def f_pred_Haaland (Array, Reynolds, Diameter_inter, FinHeight, limit, f_name = 'f_pred_Haaland [-]'):
     '''Calculation of predicted friction factor by Haaland correlation (by Fanning) for the microfined tubes.
-    Inputs are: Array - final table, Reynolds - Reynolds number according to measured flow (liquid, gas, liquid-only, gas-only), Diameter_inter - internal diameter of the tube, FinHeight - height of the fin, limit - critical Re number.'''
+    Inputs are: Array - final table, Reynolds - Reynolds number according to measured flow (liquid, gas, liquid-only, gas-only) [-], Diameter_inter - internal diameter of the tube [m], FinHeight - height of the fin [m], limit - critical Re number [-].'''
     import pandas as pd
     import numpy as np
     
