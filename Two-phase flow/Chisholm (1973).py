@@ -1,6 +1,6 @@
 def Chisholm_1973(Array, Chisholm_Y, MassQual, MassFlux_tp, TPM_name = 'phi^2_pred_Chisholm_1973_lo [-]'):
     '''Calculation of Chisholm (1973) model for two phase flow multiplier - liquid.
-    Inputs are: Array - final table, MassQual - mass quality, MassFlux_tp - two phase mass flux.'''    
+    Inputs are: Array - final table, MassQual - mass quality [-], MassFlux_tp - two phase mass flux [kg/m^2/s].'''    
     import numpy as np
     import pandas as pd
     
