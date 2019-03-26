@@ -1,6 +1,6 @@
 def f_pred_Fang(Array, Reynolds, limit, f_name = 'f_pred_Fang [-]'):
     '''Calculation of predicted friction factor by Fang (2011) correlation (by Fanning) - smooth tube.
-    Inputs are: Array - final table, Reynolds - Reynolds number according to measured flow (liqud, gas, liquid-only, gas-only), limit - critical Re number.'''
+    Inputs are: Array - final table, Reynolds - Reynolds number according to measured flow (liqud, gas, liquid-only, gas-only) [-], limit - critical Re number [-].'''
     
     import numpy as np
     import pandas as pd
