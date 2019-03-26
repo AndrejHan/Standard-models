@@ -1,6 +1,6 @@
 def Sun_Mishima_2009 (Array, Lockhart_Martinelli, Reynolds_l, Reynolds_g, D_int, rho_l, rho_g, SurfaceTension, MassQual, TPM_name = 'phi^2_pred_Sun_Mishima_2009_l [-]'):
     '''Calculation of Sun and Mishima (2009) model for two phase flow multiplier - liquid.
-    Inputs are: Array - final table, Lockhart_Martinelli - L and M parameter X, Reynolds_l Re number of liquid, Reynolds_g - Re number of gas, D_int - internal diameter, rho_l - density of liquid, rho_g - density of gas, SurfaceTension, MassQual - mass quality.'''    
+    Inputs are: Array - final table, Lockhart_Martinelli - L and M parameter X [-], Reynolds_l - Re number of liquid [-], Reynolds_g - Re number of gas [-], D_int - internal diameter [m], rho_l - density of liquid [kg/m^3], rho_g - density of gas [kg/m^3], SurfaceTension [N/m], MassQual - mass quality [-].'''    
     import numpy as np
     import pandas as pd
     La = (np.sqrt(SurfaceTension/(9.81*(rho_l - rho_g))))/D_int #Laplace constant
