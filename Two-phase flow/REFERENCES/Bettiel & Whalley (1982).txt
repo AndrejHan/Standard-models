@@ -1,0 +1,1 @@
+D.R.H. Beattie, P.B. Whalley, A simple two-phase frictional pressure drop calculation method, International Journal of Multiphase Flow, 8 (1982) 83-87.
