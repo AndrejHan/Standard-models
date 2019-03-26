@@ -1,6 +1,6 @@
 def Shannak_2008 (Array, MassQual, DynVisc_l, DynVisc_g, MassFlux_tp, D_int, rho_l, rho_g, rho_tp, FinHeight,  HM_name = 'Dp/dz_pred_Shannak_2008_tp [Pa/m]'):
     '''Calculation of Shannak et al. (2008) model for the two phase friction factor of the rough tubes.
-    Inputs are: Array - final table, MassQual - mass quality, DynVisc_l - Dynamic viscosity of liquid, DynVisc_g - Dynamic viscosity of gas, MassFlux_tp - two phase mass flux, D_int - internal diameter, rho_l - liquid phase flow density, rho_g - liquid phase flow density, rho_tp - two phase flow density, FinHeight - height of the fin.'''
+    Inputs are: Array - final table, MassQual - mass quality [-], DynVisc_l - Dynamic viscosity of liquid [Pa*s], DynVisc_g - Dynamic viscosity of gas [Pa*s], MassFlux_tp - two phase mass flux [kg/m^2/s], D_int - internal diameter [m], rho_l - liquid phase flow density [kg/m^3], rho_g - liquid phase flow density [kg/m^3], rho_tp - two-phase flow density [kg/m^3], FinHeight - height of the fin [m].'''
     import pandas as pd
     import numpy as np
     Re_tp = ((MassFlux_tp * D_int) * (MassQual**2 + (1-MassQual)**2 * (rho_g/rho_l))) / (DynVisc_g*MassQual + DynVisc_l*(1-MassQual) *  (rho_g/rho_l))
