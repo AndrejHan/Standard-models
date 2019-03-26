@@ -1,6 +1,6 @@
 def f_pred_Nikuradse (Array, Reynolds, limit, f_name = 'f_pred_Nikuradse [-]'):
     '''Calculation of predicted friction factor by Nikuradse correlation (by Fanning) - smooth tube.
-    Inputs are: Array - final table, Reynolds - Reynolds number according to measured flow (liquid, gas, liquid-only, gas-only), limit - critical Re number.'''
+    Inputs are: Array - final table, Reynolds - Reynolds number according to measured flow (liquid, gas, liquid-only, gas-only) [-], limit - critical Re number [-].'''
     import pandas as pd
     import numpy as np
     import scipy 
